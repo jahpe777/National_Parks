@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Portfolio">
+    <title>GitHub Repo App</title>
+    <link href="assets/css/national.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+        <h1>National Parks Finder</h1>
+
+        <form id="js-form">
+            <label for="search-state">Search by State(s) (ex. CA, NY)</label>
+            <input type="text" name="search-state" id="js-search-state" required>
+<br>
+            <label for="max-results">How many parks would you like to see?</label>
+            <input type="number" name="max-results" id="js-max-results" min="1" max="50" value="10">
+
+            <input type="submit" value="Go!">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+
+        <section class="results hidden">
+          <h2>National Parks</h2>
+          <ul id="js-results-list">
+          </ul>
+        </section>
+    </div>
+
+    <script src='assets/js/lib/jquery-3.4.1.min.js'></script>
+    <script src='assets/js/national.js'></script>
+
+  </body>
+
+</html>
